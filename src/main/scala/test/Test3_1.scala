@@ -30,5 +30,4 @@ object Test3_1 extends App {
   }
   Thread.sleep(1000)
 
-
 }
