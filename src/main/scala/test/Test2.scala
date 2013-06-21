@@ -11,9 +11,9 @@ object Test2 extends App {
     val productFuture = future {
       ProductDao.findByName("MacPro")
     }.map {
-      product =>
+      macPro =>
         val macBookPro = ProductDao.findByName("MacBookPro")
-        product.toString + ", " + macBookPro.toString
+        macPro.toString + ", " + macBookPro.toString
     }
 
     productFuture.foreach(println)
